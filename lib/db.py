@@ -3,9 +3,15 @@ from pymongo import MongoClient
 client = MongoClient()
 db = client.throw_db
 
-def saveNewAccountInfo(email, password):
-  """Inserts new valid dropbox account into mongodb"""
-
+def saveAccountIntoDB(fname, lname, email, password):
+  """Saves new account credentials into the mongodb"""
+  account = {"first_name": fname,
+             "last_name": lname,
+             "email": email,
+             "password": password}
+  accounts = db.accounts
+  account_id = accounts.insert(account)
+  print account
 
 # post = {"author": "Mike",
 #         "text": "My firfst blog post!",
