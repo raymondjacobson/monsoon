@@ -2,7 +2,6 @@ import dropbox
 from lib.db import *
 
 def generateAuthCode(driver):
-
   app_key = 'y56d5gksg6oo46o'
   app_secret = 'utczpw6u3g8gt81'
   flow = dropbox.client.DropboxOAuth2FlowNoRedirect(app_key, app_secret)
@@ -29,7 +28,15 @@ def uploadFileToAccount(file_path, access_token):
   response = client.put_file(file_name_path, file)
   pub_link = client.share(file_name_path)
   downloadable_link = shareLink.replace('www.dropbox.com', 'dl.dropboxusercontent.com', 1)
+  updateAccountSpace(access_token, getSpaceInAccount(access_token))
   saveUploadedFile(file_name, pub_link, downloadable_link)
   print "uploaded!"
   print "pub link: " + pub_link
   print "DL link: " + downloadable_link
+
+def getSpaceInAccount(access_token):
+  client = dropbox.client.DropboxClient(access_token)
+  account_info = client.account_info
+  quota = account_info['quota_info']['quota']
+  used = account_info['quota_info']['normal'] + account_info['quota_info']['shared']
+  return quota - used
