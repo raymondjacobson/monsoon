@@ -40,7 +40,7 @@ Example:
 
 ```
 python monsoon.py put file.txt # uploads a file (making a new account if necessary)
-python monsoon.py get file.txt # gets the public and downloadable links for the file
+python monsoon.py grab file.txt # gets the public and downloadable links for the file
 ```
 
 ## Notes
