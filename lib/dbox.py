@@ -2,7 +2,7 @@ import dropbox
 from config import config
 from lib.db import *
 
-def generateAccessToken(driver):
+def generateAccessToken(driver, email, password):
   """Automatically generates an authentication code for the master app"""
   app_key = config['app_key']
   app_secret = config['app_secret']
@@ -12,8 +12,8 @@ def generateAccessToken(driver):
   driver.implicitly_wait(10)
   driver.get(authorize_url)
 
-  driver.execute_script("document.getElementById('login_email').value = 'BacteroidalKali@maildrop.cc';")
-  driver.execute_script("document.getElementById('login_password').value = 'PhGmJJf389BA8z8DHJAX';")
+  driver.execute_script("document.getElementById('login_email').value = '%s';" % email)
+  driver.execute_script("document.getElementById('login_password').value = '%s';" % password)
   driver.find_element_by_id('login_submit').click()
   driver.find_element_by_name('allow_access').click()
   auth_code = driver.find_element_by_class_name('auth-code').text

@@ -32,6 +32,6 @@ def generateNewAccount():
   driver.execute_script("document.getElementById('password').value = '%s';" % _password)
   driver.execute_script("document.getElementById('tos_agree').checked = true;")
   driver.execute_script("document.getElementById('signup-form').submit();")
-  access_token = generateAccessToken(driver)
+  access_token = generateAccessToken(driver, _email, _password)
   available_space = getSpaceInAccount(access_token)
   saveAccountIntoDB(_fname, _lname, _email, _password, access_token, available_space)
