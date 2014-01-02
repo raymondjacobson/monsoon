@@ -1,3 +1,4 @@
 .DS_Store
 *.pyc
 ghostdriver.log
+test_upload.txt
