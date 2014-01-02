@@ -9,10 +9,9 @@
 """
 from lib.generator import *
 
-generateNewAccount()
+# generateNewAccount()
+# print getNewEmailAddress()
 print "done"
-while True:
-  "asdf"
 
 # throw a file 
 # - if no accounts of adequate space or accounts = 0, generate new one

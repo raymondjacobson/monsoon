@@ -1,4 +1,4 @@
 pymongo==2.6.3
 names==0.3.0
 dropbox==2.0.0
-Ghost.py
+selenium==2.37.3
