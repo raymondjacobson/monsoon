@@ -15,6 +15,7 @@ def getNewEmailAddress():
   return emailAddr
 
 def getNewPassword(size=20):
+  """Generates a new password of default size 20"""
   chars = string.ascii_uppercase + string.ascii_lowercase + string.digits
   return ''.join(random.choice(chars) for x in range(size))
 
@@ -31,6 +32,6 @@ def generateNewAccount():
   driver.execute_script("document.getElementById('password').value = '%s';" % _password)
   driver.execute_script("document.getElementById('tos_agree').checked = true;")
   driver.execute_script("document.getElementById('signup-form').submit();")
-  auth_code = generateAuthCode(driver)
-  available_space = getSpaceInAccount(auth_code)
-  saveAccountIntoDB(_fname, _lname, _email, _password, auth_code, available_space)
+  access_token = generateAccessToken(driver)
+  available_space = getSpaceInAccount(access_token)
+  saveAccountIntoDB(_fname, _lname, _email, _password, access_token, available_space)
