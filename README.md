@@ -30,7 +30,7 @@ usage: monsoon [-h] action file
 
 positional arguments:
   action      either 'put' or 'grab' a file into the cloud
-  file        file to put or grab
+  file        file to commit action on
 
 optional arguments:
   -h, --help  show this help message and exit
@@ -47,6 +47,12 @@ python monsoon.py get file.txt # gets the public and downloadable links for the 
 
 1. Each time monsoon needs to generate a new dropbox account, it takes a little time. Be patient on the first run and every time you use up 2 gigs.
 2. There is one caveat -- dropbox links expire January 1, 2030. you'll have to redo everything at that point and you might lose some stuff. Sorry.
+
+## Coming Up
+
+1. Fuzzy search to make finding the right files easier
+2. Possible simple front-end interface built around fuzzy search and/or cocoa app, etc.
+3. Better folder support
 
 ## Thanks
 
