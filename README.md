@@ -43,10 +43,13 @@ python monsoon.py put file.txt # uploads a file (making a new account if necessa
 python monsoon.py get file.txt # gets the public and downloadable links for the file
 ```
 
+## Notes
+
+1. Each time monsoon needs to generate a new dropbox account, it takes a little time. Be patient on the first run and every time you use up 2 gigs.
+2. There is one caveat -- dropbox links expire January 1, 2030. you'll have to redo everything at that point and you might lose some stuff. Sorry.
+
 ## Thanks
 
-Inspired by a project I worked on called cumulus.af (https://github.com/unblevable/cumulus.af).
+Inspired by a project I worked on called cumulus.af (https://github.com/unblevable/cumulus.af) at hackMIT fall 2013.
 Special thanks to Brian Le (@unblevable) and Alex Freska (@alexfreska)
 
-
-caveat -- dropbox links expire in 2030. you'll have to redo everything at that point.
