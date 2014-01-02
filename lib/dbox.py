@@ -1,5 +1,5 @@
 import dropbox
-# from selenium import webdriver
+from lib.db import *
 
 def generateAuthCode(driver):
 
@@ -8,7 +8,6 @@ def generateAuthCode(driver):
   flow = dropbox.client.DropboxOAuth2FlowNoRedirect(app_key, app_secret)
   authorize_url = flow.start()
 
-  driver = webdriver.PhantomJS()
   driver.implicitly_wait(10)
   driver.get(authorize_url)
 
@@ -19,5 +18,18 @@ def generateAuthCode(driver):
   auth_code = driver.find_element_by_class_name('auth-code').text
   driver.quit()
 
-  access_token, user_id = flow.finish(code)
+  access_token, user_id = flow.finish(auth_code)
   return auth_code
+
+def uploadFileToAccount(file_path, access_token):
+  client = dropbox.client.DropboxClient(access_token)
+  file = open(file_path)
+  file_name = file.split("/")[-1]
+  file_name_path = "/" + file_name
+  response = client.put_file(file_name_path, file)
+  pub_link = client.share(file_name_path)
+  downloadable_link = shareLink.replace('www.dropbox.com', 'dl.dropboxusercontent.com', 1)
+  saveUploadedFile(file_name, pub_link, downloadable_link)
+  print "uploaded!"
+  print "pub link: " + pub_link
+  print "DL link: " + downloadable_link

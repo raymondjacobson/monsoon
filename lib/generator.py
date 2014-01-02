@@ -1,6 +1,7 @@
 from selenium import webdriver
 import names, random, string
-from lib.db, lib.dbox import *
+from lib.db import *
+from lib.dbox import *
 
 driver = webdriver.PhantomJS()
 driver.implicitly_wait(10)

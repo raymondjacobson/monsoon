@@ -9,7 +9,7 @@
 """
 from lib.generator import *
 
-# generateNewAccount()
+generateNewAccount()
 # print getNewEmailAddress()
 print "done"
 
