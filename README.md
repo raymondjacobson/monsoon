@@ -10,15 +10,16 @@ Automagically infinite space to organize your content.
 3. Give your app a name (it doesn't matter)
 4. Copy the demo config_demo.py file, rename it to config.py, and replace the
 appropriate app key and app secret using the ones provided to your app in the dropbox app console.
-5. You'll need an instance of mongodb running. http://docs.mongodb.org/manual/installation/
+5. You'll need an instance of mongodb running. If you have mangodb installed, run mongod as a separate task. (http://docs.mongodb.org/manual/installation/)
+6. Make sure you have node.js installed -- specifically npm (http://nodejs.org/)
 6. Then, execute the following:
 
 ```
 git clone git@github.com:raymondjacobson/monsoon.git
 cd monsoon
-npm install -g phantomjs # requires node.js
+npm install -g phantomjs
 pip install -r requirements.txt
-python monsoon.py
+python monsoon.py -h
 ```
 
 ## Usage
@@ -29,7 +30,7 @@ Until this project gets built out further, the interface is rather simple.
 usage: monsoon [-h] action file
 
 positional arguments:
-  action      either 'put' or 'grab' a file into the cloud
+  action      either 'put' or 'grab' a file
   file        file to commit action on
 
 optional arguments:
