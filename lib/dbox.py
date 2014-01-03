@@ -1,6 +1,6 @@
 import dropbox
 from config import config
-from lib.db import *
+from lib.db import saveUploadedFile, updateAccountSpace
 
 def generateAccessToken(driver, email, password):
   """Automatically generates an authentication code for the master app"""

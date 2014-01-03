@@ -8,9 +8,9 @@
 
 """
 import cli.app, os
-from lib.db import *
-from lib.dbox import *
-from lib.generator import *
+from lib.db import decideNewAccount, getNewestAccount, getUploadedFile
+from lib.dbox import uploadFileToAccount
+from lib.generator import generateNewAccount
 
 def put(file):
   print "putting..."

@@ -1,7 +1,7 @@
 from selenium import webdriver
 import names, random, string
-from lib.db import *
-from lib.dbox import *
+from lib.db import saveAccountIntoDB
+from lib.dbox import generateAccessToken, getSpaceInAccount
 
 driver = webdriver.PhantomJS()
 driver.implicitly_wait(10)
