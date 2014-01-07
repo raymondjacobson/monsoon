@@ -16,7 +16,7 @@ def getNewEmailAddress():
 
 def getNewPassword(size=20):
   """Generates a new password of default size 20"""
-  chars = string.ascii_uppercase + string.ascii_lowercase + string.digits
+  chars = string.ascii_letters + string.digits
   return ''.join(random.choice(chars) for x in range(size))
 
 def generateNewAccount():
