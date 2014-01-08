@@ -26,7 +26,7 @@ def decideNewAccount(file_size):
   if (accounts.count() == 0):
     return True
   newest_account = getNewestAccount()
-  if (newest_account['available_space'] - file_size < 1000): # 1kB buffer
+  if (newest_account['available_space'] - file_size < 1024): # 1kB buffer
     return True
   return False # OK to upload
 
