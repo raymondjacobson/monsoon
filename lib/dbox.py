@@ -38,7 +38,7 @@ def uploadByChunk(client, file, file_size, file_name_path,
                   chunk_size = 1024 * 1024, overwrite=True):
   """
   Loosely copied from Dropbox API.
-  - Handles chunked uploading of files
+  - Handles chunked uploading of files; allows large files & pauses in upload
   - Displays percentage of file uploaded
   """
   while offset < file_size:
