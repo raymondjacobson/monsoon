@@ -67,6 +67,7 @@ def uploadFileToAccount(file_path, access_token):
   file_name_path = "/" + file_name
   file_size = os.stat(file_path).st_size
   uploadByChunk(client, file, file_size, file_name_path)
+  file.close()
 
   short_link = client.share(file_name_path)['url']
   pub_link = client.share(file_name_path, short_url=False)['url']
