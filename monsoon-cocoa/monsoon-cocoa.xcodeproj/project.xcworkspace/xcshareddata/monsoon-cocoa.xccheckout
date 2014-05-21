@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5F43F36D-B252-4D18-96AF-7A9AECEF1E81</string>
+	<key>IDESourceControlProjectName</key>
+	<string>monsoon-cocoa</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7867824D-6F3C-4BCB-92D9-6913C0746694</key>
+		<string>ssh://github.com/raymondjacobson/monsoon.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>monsoon-cocoa/monsoon-cocoa.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7867824D-6F3C-4BCB-92D9-6913C0746694</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/raymondjacobson/monsoon.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7867824D-6F3C-4BCB-92D9-6913C0746694</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7867824D-6F3C-4BCB-92D9-6913C0746694</string>
+			<key>IDESourceControlWCCName</key>
+			<string>monsoon</string>
+		</dict>
+	</array>
+</dict>
+</plist>
