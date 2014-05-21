@@ -18,6 +18,7 @@
 		4D86BCC7192C341F00F39A68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D86BCA6192C341E00F39A68 /* Cocoa.framework */; };
 		4D86BCCF192C341F00F39A68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D86BCCD192C341F00F39A68 /* InfoPlist.strings */; };
 		4D86BCD1192C341F00F39A68 /* monsoon_cocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D86BCD0192C341F00F39A68 /* monsoon_cocoaTests.m */; };
+		4DD0B9B2192C54D7000C4761 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DD0B9B1192C54D7000C4761 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4D86BCCC192C341F00F39A68 /* monsoon-cocoaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "monsoon-cocoaTests-Info.plist"; sourceTree = "<group>"; };
 		4D86BCCE192C341F00F39A68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4D86BCD0192C341F00F39A68 /* monsoon_cocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = monsoon_cocoaTests.m; sourceTree = "<group>"; };
+		4DD0B9B1192C54D7000C4761 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		4D86BCAC192C341E00F39A68 /* monsoon-cocoa */ = {
 			isa = PBXGroup;
 			children = (
+				4DD0B9B1192C54D7000C4761 /* icon.png */,
 				4D86BCB8192C341E00F39A68 /* AppDelegate.h */,
 				4D86BCB9192C341E00F39A68 /* AppDelegate.m */,
 				4D86BCBB192C341E00F39A68 /* MainMenu.xib */,
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D86BCB1192C341E00F39A68 /* InfoPlist.strings in Resources */,
+				4DD0B9B2192C54D7000C4761 /* icon.png in Resources */,
 				4D86BCBF192C341E00F39A68 /* Images.xcassets in Resources */,
 				4D86BCB7192C341E00F39A68 /* Credits.rtf in Resources */,
 				4D86BCBD192C341E00F39A68 /* MainMenu.xib in Resources */,
@@ -466,6 +470,7 @@
 				4D86BCD6192C341F00F39A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D86BCD7192C341F00F39A68 /* Build configuration list for PBXNativeTarget "monsoon-cocoaTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +479,7 @@
 				4D86BCD9192C341F00F39A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

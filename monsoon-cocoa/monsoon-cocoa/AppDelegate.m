@@ -10,9 +10,23 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+- (void)awakeFromNib {
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    NSBundle *bundle = [NSBundle mainBundle];
+    statusImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon" ofType:@"png"]];
+    
+    [statusItem setImage:statusImage];
+    [statusItem setMenu:statusMenu];
+    [statusItem setToolTip:@"Vacant"];
+    [statusItem setHighlightMode:YES];
+}
+
+- (IBAction)put:(id)sender {
+    NSLog(@"putting a file");
+}
+
+- (IBAction)grab:(id)sender {
+    NSLog(@"grabbing a file");
 }
 
 @end
