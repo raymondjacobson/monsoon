@@ -29,4 +29,8 @@
     NSLog(@"grabbing a file");
 }
 
+- (IBAction)quit:(id)sender {
+    [NSApp terminate:nil];
+}
+
 @end

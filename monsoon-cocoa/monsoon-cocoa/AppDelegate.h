@@ -16,5 +16,6 @@
 
 - (IBAction)put:(id)sender;
 - (IBAction)grab:(id)sender;
+- (IBAction)quit:(id)sender;
 
 @end

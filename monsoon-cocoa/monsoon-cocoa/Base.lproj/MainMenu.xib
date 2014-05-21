@@ -34,7 +34,7 @@
                 <menuItem title="Quit" id="Y5Q-Bb-Nnp">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="terminate:" target="-1" id="taI-AJ-AnI"/>
+                        <action selector="quit:" target="Voe-Tx-rLC" id="RmF-Zt-YUK"/>
                     </connections>
                 </menuItem>
             </items>
